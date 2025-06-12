@@ -1,0 +1,92 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Mahi 💖</title>
+  <meta name="description" content="A sweet tribute page to Mahi, featuring 3D animations and interactive flip-cards.">
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌸🥹😭My Mahi – The Cutest Girl in the World 🌸💖🥹</h1>
+    <button id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+  </header>
+
+  <section class="hero">
+    <div id="heart-3d" aria-hidden="true"></div>
+    <div class="hero-content">
+      <img src="IMG_20241123_124327.jpg" alt="Mahi smiling in the garden" loading="lazy" height="200%">
+      <h2>Mahia Rahaman</h2>
+      <p>The girl who makes my world brighter <br>The girl who made me Ashfaque.</p>
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>🌷 About Mahi</h2>
+    <ul>
+      <li>🌹 The most loveliest girl</li>
+      <li>💖 The most cutest and the most beautiful girl in the whole universe</li>
+      <li>🌼 Always brings happiness to my life</li>
+      <li>📚 The most smartest, most caring, and the sweetest</li>
+      <li>Loves food, Ashfaque, and me!</li>
+    </ul>
+  </section>
+
+  <section class="gallery">
+    <h2>📸 Mahi's Beautiful Moments</h2>
+    <div class="images">
+      <figure class="card" tabindex="0">
+        <div class="face front"><img src="IMG-20250427-WA0197.jpg" alt="sexiness" loading="lazy"></div>
+        <figcaption class="face back"><p>Sweet Mahi 💕</p></figcaption>
+      </figure>
+      <figure class="card" tabindex="0">
+        <div class="face front"><img src="IMG-20221129-WA0007.jpg" alt="my mahi" loading="lazy"></div>
+        <figcaption class="face back"><p>Beautiful inside &amp; out ✨</p></figcaption>
+      </figure>
+      <figure class="card" tabindex="0">
+        <div class="face front"><img src="IMG-20240622-WA0004.jpg" alt="Mahi’s bright smile" loading="lazy"></div>
+        <figcaption class="face back"><p>Your smile lights up my life 🌟</p></figcaption>
+      </figure>
+      <figure class="card" tabindex="0">
+  <div class="face front">
+    <img src="IMG-20241109-WA0032.jpg" alt="Mahi being cute" loading="lazy">
+  </div>
+  <figcaption class="face back">
+    <p>Mahi, my forever sunshine ☀️</p>
+  </figcaption>
+</figure>
+        <figure class="card" tabindex="0">
+            <div class="face front"><img src="Snapchat-1781452258.jpg" alt="Mahi" loading="lazy"></div>
+            <figcaption class="face back"><p>You are the beauty🐾</p></figcaption>
+        </figure>
+        <figure class="card" tabindex="0">
+            <div class="face front"><img src="IMG-20230820-WA0028.jpg" alt="Mahi’s radiant beauty" loading="lazy"></div>
+            <figcaption class="face back"><p>Nervous and cute mahi 🌹</p></figcaption>
+        </figure>
+        <figure class="card" tabindex="0">
+            <div class="face front"><img src="Screenshot_20221014-195343_Gallery.jpg" alt="Mahi’s adorable face" loading="lazy"></div>
+            <figcaption class="face back"><p>My cute mahi 🥰</p></figcaption>
+
+      <div id="more-images" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="messages">
+    <h2>💌 Why I Love Mahi</h2>
+    <p id="love-message">Click the button to see one of Mahi’s charms  ✨</p>
+    <button type="button" class="btn-hover" onclick="showMessage()">Reveal</button>
+  </section>
+
+  <footer>
+    <p><b>By Ashfaque for his one and only Mahi🥰❤️</b></p>
+  </footer>
+
+  <!-- Defer scripts for non-blocking load -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script defer src="heart.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
