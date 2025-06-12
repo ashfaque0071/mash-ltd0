@@ -31,6 +31,19 @@ toggle.addEventListener('click', () => {
   document.body.classList.toggle('dark');
   toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
 });
+// Auto-flip on mobile touch (shows for 3 seconds)
+document.querySelectorAll(".card").forEach((card) => {
+  card.addEventListener(
+    "touchstart",
+    () => {
+      card.classList.add("auto-flip");
+      setTimeout(() => {
+        card.classList.remove("auto-flip");
+      }, 3000);
+    },
+    { passive: true }
+  );
+});
 
 // Export showMessage so inline onclick still works
 window.showMessage = showMessage;
