@@ -39,7 +39,7 @@ document.querySelectorAll(".card").forEach((card) => {
       card.classList.add("auto-flip");
       setTimeout(() => {
         card.classList.remove("auto-flip");
-      }, 3000);
+      }, 1500);
     },
     { passive: true }
   );
