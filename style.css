@@ -144,6 +144,37 @@ body.dark .info, body.dark .messages {
   box-sizing: border-box;
 }
 
+/* Stacked Flip Area */
+.stacked-flip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  position: relative;
+  height: 300px;
+}
+#flip-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+#flip-container .card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.8s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+#flip-container .card.active {
+  opacity: 1;
+  z-index: 1;
+}
+#flip-container .card.flipped {
+  transform: rotateY(180deg);
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -157,7 +188,7 @@ body.dark footer {
   color: var(--dark-text);
 }
 
-/* Auto flip class (optional) */
+/* Optional auto flip */
 .card.auto-flip {
   transform: rotateY(180deg);
 }
